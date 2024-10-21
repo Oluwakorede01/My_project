@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+
+header {
+  position: fixed;
+  padding-left: 20px;
+  padding-right: 30px;
+  width: 100vw;
+  text-align: center;
+  z-index: 1000;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Added to wrap content on smaller screens */
+}
+
+marquee {
+  color: #ebd255;
+  font-size: 15px;
+  margin-top: 0px;
+  text-indent: 4px;
+}
+
+.logo {
+  font-size: 50px;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  padding-top: 5px;
+  line-height: 50px;
+  font-style: oblique;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Added to wrap items on smaller screens */
+}
+
+li {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+li:hover {
+  background-color: #ebd255;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  flex-wrap: wrap; /* Added for better layout on small screens */
+}
+
+.intro-wrap {
+  margin-top: 150px;
+  padding: 30px;
+}
+
+.sub-heading {
+  margin-top: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-shadow: 0px 3px 5px orange;
+  color: #ebd255;
+}
+
+.img1 {
+  margin-top: 100px;
+}
+
+#typing1 {
+  font-size: 30px;
+  margin-top: 20px;
+  height: 30px;
+  width: 500px;
+  font-family: "Romanesco", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#typing2 {
+  margin-top: 80px;
+  width: 400px;
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+.section2 {
+  background-image: url(./my.assets/dylan-calluy-j9q18vvHitg-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.section2 p {
+  width: 1000px;
+}
+
+.btn1,
+.btn2 {
+  border: none;
+  border-radius: 15px;
+  background-color: orangered;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column; /* Stack nav items on smaller screens */
+    gap: 1rem;
+  }
+
+  .section1 {
+    flex-direction: column; /* Stack content vertically */
+    text-align: center;
+    height: 80vh;
+  }
+
+  #typing1, #typing2 {
+    width: 100%; /* Make sure text containers are responsive */
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .section2 p {
+    width: 100%; /* Ensure paragraphs adjust to smaller screens */
+    font-size: 14px;
+  }
+}
